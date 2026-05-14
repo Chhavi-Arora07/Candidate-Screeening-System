@@ -1,0 +1,28 @@
+Machine Learning Fundamentals
+
+Supervised Learning
+Supervised learning involves training a model on labeled examples. The algorithm learns a mapping from inputs to outputs. Common algorithms include linear regression for continuous outputs and logistic regression for binary classification. Decision trees partition the feature space into regions. Random forests aggregate many decision trees to reduce variance. Support Vector Machines find the maximum margin hyperplane separating classes. Gradient boosting builds an ensemble of weak learners sequentially.
+
+Bias-Variance Tradeoff
+The bias-variance tradeoff is central to understanding generalization. High bias means the model is too simple (underfitting). High variance means the model memorizes training data (overfitting). Regularization techniques like L1 (Lasso) and L2 (Ridge) penalize model complexity. Dropout in neural networks randomly deactivates neurons during training to prevent co-adaptation.
+
+Neural Networks and Deep Learning
+A neural network is composed of layers of neurons. Each neuron computes a weighted sum of inputs followed by a nonlinear activation function. Common activations: ReLU (max(0,x)), sigmoid (1/(1+e^-x)), tanh. Backpropagation computes gradients via the chain rule to update weights. Batch normalization normalizes layer activations, accelerating training. Convolutional neural networks use local receptive fields for spatial data. Recurrent neural networks process sequences; LSTMs address the vanishing gradient problem.
+
+Unsupervised Learning
+K-means clustering assigns points to the nearest centroid iteratively. DBSCAN identifies clusters based on density. Principal Component Analysis (PCA) finds orthogonal directions of maximum variance. Autoencoders learn compressed representations by reconstructing inputs.
+
+Retrieval-Augmented Generation (RAG)
+RAG combines a retrieval system with a generative language model. A corpus is chunked and embedded into a vector space. At inference, relevant chunks are retrieved via semantic similarity and passed as context to the LLM. This grounds generation in factual knowledge and reduces hallucination. Vector databases like FAISS, Pinecone, or Weaviate enable efficient approximate nearest neighbor search.
+
+Model Evaluation
+Cross-validation divides data into k folds to estimate generalization. Precision = TP/(TP+FP), Recall = TP/(TP+FN), F1 is harmonic mean. ROC curves plot TPR vs FPR across thresholds. AUC-ROC summarizes classifier performance. For regression: MSE, RMSE, MAE, R-squared.
+
+Embeddings and Transformers
+Word embeddings map tokens to dense vectors. Word2Vec uses skip-gram or CBOW objectives. Transformers use self-attention to model long-range dependencies. The attention mechanism computes Query-Key-Value products scaled by sqrt(d_k). BERT uses masked language modeling for pretraining. GPT uses autoregressive next-token prediction.
+
+Feature Engineering
+Feature scaling (standardization, min-max normalization) is important for distance-based algorithms. One-hot encoding handles categorical variables. Missing values can be imputed with mean, median, or predicted. Feature selection methods include correlation analysis, mutual information, and recursive feature elimination.
+
+Optimization
+Gradient descent updates parameters in the direction of negative gradient. Stochastic gradient descent uses mini-batches. Adam optimizer combines momentum and adaptive learning rates. Learning rate scheduling (warmup, cosine decay) improves convergence.

@@ -1,0 +1,28 @@
+Backend Engineering Fundamentals
+
+REST API Design
+REST (Representational State Transfer) is an architectural style for distributed systems. Resources are identified by URIs. HTTP methods: GET (read), POST (create), PUT (replace), PATCH (update), DELETE (remove). Statelessness means each request contains all information needed. HTTP status codes: 2xx success, 3xx redirect, 4xx client error, 5xx server error. Idempotency means repeated requests produce the same result (GET, PUT, DELETE are idempotent).
+
+Databases
+Relational databases (PostgreSQL, MySQL) use tables, rows, and SQL. ACID properties: Atomicity, Consistency, Isolation, Durability. Indexes speed up reads but slow writes. N+1 query problem occurs when fetching related records in a loop; use JOIN or eager loading. NoSQL databases (MongoDB, Cassandra) trade ACID for scalability. Redis is an in-memory key-value store used for caching and pub/sub.
+
+System Design Concepts
+Load balancing distributes traffic across servers. Horizontal scaling adds more servers; vertical scaling adds more resources to one server. Caching at multiple levels (CDN, reverse proxy, application, database) reduces latency. Message queues (Kafka, RabbitMQ) decouple producers from consumers and enable async processing. CAP theorem: a distributed system can guarantee at most two of Consistency, Availability, and Partition tolerance.
+
+Microservices vs Monolith
+Monoliths are simpler to develop and deploy but harder to scale selectively. Microservices allow independent deployment and scaling but introduce network complexity and distributed systems challenges. Service discovery, circuit breakers, and API gateways are common microservices patterns.
+
+Authentication and Authorization
+Authentication verifies identity; authorization controls access. JWT (JSON Web Tokens) are stateless bearer tokens. OAuth2 delegates authorization to a third party. bcrypt is the standard for password hashing. Rate limiting prevents abuse. HTTPS encrypts data in transit.
+
+Python Backend Frameworks
+FastAPI uses Python type hints and Pydantic for validation; async support via asyncio. Flask is lightweight and flexible, better for simple APIs. Django includes ORM, admin, and authentication batteries included. SQLAlchemy is the most popular Python ORM.
+
+Concurrency and Async
+Async I/O (asyncio) allows non-blocking operations for I/O-bound tasks. Threads share memory but have GIL in CPython. Multiprocessing bypasses GIL for CPU-bound tasks. Connection pooling reuses database connections. Thread pools and task queues manage concurrent workloads.
+
+Data Structures and Algorithms
+Hash maps provide O(1) average lookup. Binary search runs in O(log n). Queues (FIFO) and stacks (LIFO) are fundamental. Graph algorithms (BFS, DFS, Dijkstra) are common in backend routing and recommendations. Big O notation describes time and space complexity.
+
+Testing
+Unit tests isolate individual functions. Integration tests verify components work together. Mocking replaces dependencies with controlled fakes. Test coverage measures which lines are executed. CI/CD pipelines automate testing on every commit.

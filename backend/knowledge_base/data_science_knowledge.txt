@@ -1,0 +1,25 @@
+Data Science Fundamentals
+
+Data Wrangling
+Pandas is the primary Python library for data manipulation. DataFrames are 2D labeled structures. groupby enables split-apply-combine operations. merge/join combines datasets. Handling missing data: dropna removes rows, fillna imputes values. Outlier detection uses IQR or Z-score methods. Data types must match expected formats.
+
+Statistical Foundations
+Descriptive statistics: mean, median, mode, standard deviation, variance. Central limit theorem: sample means approach normal distribution with large n. Hypothesis testing: null hypothesis, p-value, significance level (alpha=0.05). t-tests compare means. Chi-square tests categorical variables. A/B testing compares two variants to measure effect.
+
+Exploratory Data Analysis
+Histograms show distributions. Box plots show median and quartiles. Scatter plots reveal correlations. Heatmaps visualize correlation matrices. Matplotlib and Seaborn are standard visualization libraries. Plotly creates interactive charts.
+
+Feature Engineering
+Binning continuous variables creates categories. Polynomial features capture non-linear relationships. Log transforms reduce skewness. Target encoding replaces categories with target mean. Time series features: lag variables, rolling statistics, Fourier terms for seasonality.
+
+Model Selection and Evaluation
+Confusion matrix shows TP, FP, TN, FN. Precision-recall tradeoff: threshold tuning. Cross-validation prevents data leakage. Stratified splits preserve class distribution. Hyperparameter tuning: grid search, random search, Bayesian optimization.
+
+SQL for Data Science
+CTEs (Common Table Expressions) improve query readability. Window functions (ROW_NUMBER, LAG, LEAD, SUM OVER) perform calculations across rows. Aggregate functions with GROUP BY summarize data. Subqueries and JOINs combine multiple tables.
+
+Probability
+Bayes theorem: P(A|B) = P(B|A)*P(A)/P(B). Probability distributions: normal, binomial, Poisson. Expected value is the mean of a distribution. Conditional probability and independence are foundational.
+
+Big Data Tools
+Spark enables distributed data processing. Parquet is a columnar storage format. Airflow orchestrates data pipelines. dbt transforms data in warehouses. Snowflake, BigQuery, and Redshift are cloud data warehouses.

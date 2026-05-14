@@ -1,0 +1,28 @@
+Full Stack Engineering
+
+React Fundamentals
+React uses a virtual DOM to efficiently update the UI. Components are functions or classes that return JSX. Hooks: useState for local state, useEffect for side effects, useContext for shared state, useMemo and useCallback for memoization. Props pass data down; callbacks communicate up. React Router handles client-side routing.
+
+State Management
+Local state suits component-specific data. Lifted state is shared among siblings via common ancestor. Redux provides global state with actions and reducers. React Context avoids prop drilling for infrequently updated data. React Query manages server state with caching and refetching.
+
+Frontend Performance
+Code splitting with lazy loading reduces initial bundle size. Memoization prevents unnecessary re-renders. Image optimization: WebP format, lazy loading, responsive sizes. Lighthouse audits measure Core Web Vitals: LCP, FID, CLS.
+
+CSS and Styling
+Flexbox and Grid are primary layout systems. CSS Modules scope styles to components. Tailwind CSS uses utility classes. Responsive design uses media queries and fluid units (rem, %, vw).
+
+Node.js and Express
+Node.js runs JavaScript on the server using V8 and an event loop. Express is a minimal web framework. Middleware functions process requests in sequence. async/await handles asynchronous operations. npm manages packages.
+
+TypeScript
+TypeScript adds static typing to JavaScript. Interfaces define object shapes. Generics enable reusable type-safe code. Type narrowing uses type guards. Strict mode catches common errors.
+
+APIs and Data Fetching
+fetch API or axios sends HTTP requests from the browser. SWR and React Query cache and deduplicate requests. GraphQL queries specific fields from a typed schema. REST vs GraphQL tradeoffs: REST is simpler; GraphQL reduces over/under-fetching.
+
+Testing Frontend
+Jest is the standard JavaScript test runner. React Testing Library tests components by user behavior. Cypress and Playwright handle end-to-end tests. Mock Service Worker (MSW) intercepts network requests in tests.
+
+Deployment
+Vercel and Netlify deploy frontend apps from Git. Docker containers package apps with dependencies. CI/CD pipelines build, test, and deploy automatically. Environment variables manage configuration across environments.
